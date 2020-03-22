@@ -1,0 +1,6 @@
+.global a
+.text
+mov r1, a
+pop r2
+.text
+.end

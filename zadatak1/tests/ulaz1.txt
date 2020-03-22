@@ -1,0 +1,26 @@
+.global a,  b
+.extern d, e, f
+.data
+a:.skip 2
+.equ poyy, a
+.equ nova, b-cao+a
+b:.byte d
+
+g: .word b
+.equ cao, 10-6+12
+.align		4
+.text
+mov r6[0], 4660
+mov a, b
+mov r1, r2
+mov r2, -1
+jmp r1
+jgt *100
+jeq [r2]
+jne r3[100]
+call g
+jmp $nova
+ret
+.bss
+s: .long 3
+.end

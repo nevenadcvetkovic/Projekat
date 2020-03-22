@@ -1,0 +1,7 @@
+.text
+mov 5, r1
+add  &a,  r2
+a:
+xchg [r3], &a
+.end
+#to test every error individually place # at the begining of a tested instruction

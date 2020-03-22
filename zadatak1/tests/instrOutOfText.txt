@@ -1,0 +1,4 @@
+.data
+c: .byte 5
+mov c, r1
+.end

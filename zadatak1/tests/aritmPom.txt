@@ -1,0 +1,21 @@
+.global a, b, c
+.extern labela
+.text
+mov r1, 5
+mov r2, &a
+add r1, r2
+not [r2]
+sub r3, *400
+mul r2[0], r3[1500]
+or r3[c], labela
+lab:
+cmp b, c
+xchg r1[0], r2
+test &lab, &a
+.data
+.align 8
+a: .word 200
+c: .skip 8
+b: .byte  5
+.end
+

@@ -1,0 +1,32 @@
+.global a, b
+.extern eksterna
+.bss
+c: .skip 8
+d: .word 15
+.text
+push a
+push &b
+push &eksterna
+push r1
+push [r5]
+
+push r6[4]
+labela:
+pop r1
+pop [r2]
+pop  r6[labela]
+pop b
+pop c
+
+int r1
+int  5
+int  *5
+
+ret
+iret
+halt
+.data
+a: .word   5
+b: .skip 5
+.aliign 4
+.end

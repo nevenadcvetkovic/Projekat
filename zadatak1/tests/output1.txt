@@ -1,0 +1,22 @@
+Id	Name	Section	Value	Is local Size	RWXP
+0	und	UND	0	local	 0	0
+5	text	TEXT	UND	local	 59	RE
+7	data	DATA	UND	local	 19	WR
+1	a	DATA	8	global	 -1	0
+2	b	DATA	18	global	 -1	0
+3	c	DATA	10	global	 -1	0
+4	labela	UND	UND	global	 -1	0
+6	lab	TEXT	38	local	 -1	0
+#text
+#offset   #type    vr[.text]
+0000	R_386_32	1
+0000	R_386_32	3
+0000	R_386_32	4
+0000	R_386_32	2
+0000	R_386_32	3
+002a	R_386_32	5
+0000	R_386_32	1
+#.text
+20  12  00  05  00  20  14  50  08  00  28  12  14  50  94  30  16  50  90  01  38  34  00  46  dc  05  60  46  0a  00  50  00  00  48  50  12  00  50  0a  00  10  32  00  14  70  50  26  00  50  08  00  
+#.data
+00 00 00 00 00 00 00 00 c8  00  00 00 00 00 00 00 00 00 05  
